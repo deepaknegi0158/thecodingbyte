@@ -1,24 +1,35 @@
-import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter, Routes, Route } from "react-router-dom"
+import Pyipaes from "./docs/python/introduction-to-python/installing-python-and-environment-setup/Pyipaes";
+import Pyitp from "./docs/python/introduction-to-python/introduction-to-python/Pyitp";
+import Pywaeofpp from "./docs/python/introduction-to-python/writing-and-executing-our-first-python-program/Pywaeofpp";
+import Pydt from './docs/python/variables-and-data-types/data-types/Pydt'
+import Pyv from './docs/python/variables-and-data-types/variables/Pyv'
+
+import Python from "./docs/python/Python";
+import Home from './Pages/Home'
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path='/' element={<App />} />
+        <Route index element={<Home />} />
+
+        <Route path='/docs/python' element={<Python />} />
+
+        <Route path='docs/python/introduction-to-python' element={<Pyitp />} />
+        <Route path='/docs/python/installing-python-and-environment-setup' element={<Pyipaes />} />
+        <Route path='/docs/python/writing-and-executing-our-first-python-program' element={<Pywaeofpp/>}/>
+
+        <Route path='/docs/python/data-types' element={<Pydt/>}/>
+        <Route path='/docs/python/variables' element={<Pyv/>}/>
+      
+
+
+
+        
+      </Routes>
+    </BrowserRouter>
   );
 }
 

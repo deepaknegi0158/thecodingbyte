@@ -1,13 +1,142 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+@layer base {
+  div {
+    display: block;
+  }
+
+  h1 {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+    margin: 0 0 5px 0;
+  }
+  h2 {
+    font-size: 1.5rem;
+    line-height: 2rem;
+    margin: 0 0 5px 0;
+  }
+  h3 {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+    margin: 0 0 5px 0;
+  }
+  p{
+    font-size: 1.05rem;
+    margin: 0 0 .5rem 0;
+  }
+  li {
+    font-size: 1.05rem;
+    margin: 0 0 .1rem 0;
+  }
+  main {
+    display: block;
+  }
+  @media (min-width: 1120px) {
+    .main {
+      line-height: 20px;
+    }
+  }
+
+  @media (min-width: 1170px) {
+    .main {
+      line-height: 20px;
+      font-size: 16px;
+    }
+  }
+
+  @media (min-width: 1220px) {
+    .main {
+      line-height: 24px;
+      font-size: 16px;
+    }
+  }
+
+  @media (min-width: 1420px) {
+    .main {
+      font-size: 16px;
+      line-height: 24px;
+    }
+  }
+  .container {
+    width: 100%;
+  }
+
+  @media (min-width: 640px) {
+    .container {
+      max-width: 640px;
+    }
+  }
+
+  @media (min-width: 768px) {
+    .container {
+      max-width: 768px;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .container {
+      max-width: 1024px;
+    }
+  }
+
+  @media (min-width: 1280px) {
+    .container {
+      max-width: 1280px;
+    }
+  }
+
+  @media (min-width: 1440px) {
+    .container {
+      max-width: 1440px;
+    }
+  }
+  #comp-kyb9gc0t {
+    --padding: 0px;
+    --margin: 0px;
+  }
+
+  .py {
+    padding: 0.5rem;
+    --tw-bg-opacity: 1;
+    background-color: rgb(241 245 429 / var(--tw-bg-opacity));
+    --tw-bg-opacity: 0.6;
+    border-left-width: 2px;
+    --tw-border-opacity: 1;
+    border-color: rgb(29 78 216 / var(--tw-border-opacity));
+    overflow: auto;
+  }
+  .output {
+    padding: 0.5rem;
+    margin-top: 1rem;
+    --tw-bg-opacity: 1;
+    background-color: rgb(241 245 429 / var(--tw-bg-opacity));
+    --tw-bg-opacity: 0.6;
+    border-left-width: 2px;
+    --tw-border-opacity: 1;
+    border-color: rgb(0 0 0 / var(--tw-border-opacity));
+    overflow: auto;
+  }
+  .py .variable, .var {
+    color: #3f4551;
+  }
+  .py .operator {
+    color: #ee6565;
+  }
+  .py .num {
+    color: #824bb9;
+  }
+  .py .fun{
+    color: #0181BB;
+  }
+  .py .string {
+    color: #2cb300;
+  }
+  .py .comment {
+    color: #80868c;
+  }
+  .py .bool {
+    color: #F423F9;
+  }
 }
