@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/thecodingbyte/static/css/main.e76df1f4.css",
+    "main.js": "/thecodingbyte/static/js/main.0309fec2.js",
+    "static/media/codeperson.svg": "/thecodingbyte/static/media/codeperson.20bf21cd643a8cca027f8eb7066a080a.svg",
+    "static/media/python.svg": "/thecodingbyte/static/media/python.3e92eee045044793fbda9c66a70f18f5.svg",
+    "static/media/javascript.svg": "/thecodingbyte/static/media/javascript.4b6e1209ad6a3063ec8fbfd3d071be10.svg",
+    "static/media/cpp.svg": "/thecodingbyte/static/media/cpp.c1b549c32afd998c012a97941c202454.svg",
+    "index.html": "/thecodingbyte/index.html",
+    "static/media/shapedivider.svg": "/thecodingbyte/static/media/shapedivider.76e7c234610e8d3c346c8667a968e798.svg",
+    "main.e76df1f4.css.map": "/thecodingbyte/static/css/main.e76df1f4.css.map",
+    "main.0309fec2.js.map": "/thecodingbyte/static/js/main.0309fec2.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e76df1f4.css",
+    "static/js/main.0309fec2.js"
+  ]
+}
